@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(Raleway-Italic-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Raleway';
+    box-sizing: border-box;
+}
+.container{
+     width: 100vw;
+     height: 100vh;
+     background-image: url(iphones-7479304_1920.jpg);
+    background position: center;
+     background-size: cover;
+     padding :0 8%;
+     color: #162981;
+     position: relative;
+     text-shadow:default
+}
+.container h2{
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    margin: 2em,2em;
+    text-align: left;
+    color: #fff;
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+
+}
+.content h1 {
+    font-size: 64px;
+    font-weight:500 ;
+}
+.content  span{
+    color:#fff;
+    
+}
+.content button{
+background: transparent;
+border: 2px solid #fff;
+outline: none;
+padding: 12px 25px;
+color: #fff;}
+
+.launch-time{
+    display: flex;}
+
+.launch-time div{
+    flex-basis: 100px;
+}
+.launch-time p{
+    font-size: 60px;
+}
+
+
+.launch-time div p{
+    font: size 60px; 
+    margin-bottom: -8x;
+}
+
+img{
+
+position: absolute;
+top: 20px;
+left: 850px;
+
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giveaway Page</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+
+<h2 class="Logo">logitech Annual Giveaway</h2>
+
+<div class="content">
+
+    <p>You are eligible for <span>Giveaway</span></p>
+    <img src="4k-apple-background-sa57k6lhqn2nep0i.jpg"width="400px"height="400px">
+    <h1><span>IPHONE Giveaway</span> Availabe In:</h1>
+    <div class="launch-time">
+<div>
+ <p id="Days">00</p>
+ <span>Days</span>
+</div>
+
+<div>
+    <p id="Hours">00</p>
+    <span>Hours</span>
+</div>
+
+    <div >
+        <p id="Minutes">00</p>
+        <span>Minutes</span>
+        
+    </div>
+    <div>
+        <p id="Seconds">00</p>
+        <span>Seconds</span>
+        
+        </div>
+
+
+
+</div>
+
+    <button type="button">Learn More</button>
+
+</div>
+    
+</div>
+
+<script>
+var countDownDate = new Date("Mar 14,2024 00:00:00").getTime();
+var x =setInterval(function(){
+var now = new Date().getTime();
+var distance = countDownDate -now;
+
+var Days = Math.floor(distance /(1000*60*60*24));
+var Hours = Math.floor((distance % (1000*60*60*24)) / ( 1000*60*60));
+var Minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+var Seconds = Math.floor((distance % (1000*60)) /1000);
+
+
+
+document.getElementById("Days").innerHTML =     Days;
+document.getElementById("Hours").innerHTML = Hours;
+document.getElementById("Minutes").innerHTML = Minutes;
+document.getElementById("Seconds").innerHTML = Seconds;
+
+},1000);
+
+
+
+
+
+</script>
+
+</body>
+</html>
